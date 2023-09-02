@@ -23,23 +23,6 @@
 			"response": []
 		},
 		{
-			"name": "greeting Copy",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{baseURL}}/greeting",
-					"host": [
-						"{{baseURL}}"
-					],
-					"path": [
-						"greeting"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "scores",
 			"request": {
 				"method": "GET",
