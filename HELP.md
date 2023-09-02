@@ -1,8 +1,19 @@
 # Getting Started
 
 To start server, run DemoApplication.main()
+If the ScoresController is present, it'll demand a DATABASE_URL env var.  You can set it by editing the run configuration.  
+
+Note that your database connection URL can't be in the normal form that elephantsql, etc, apply  - not postgres://... - rather you'll need to re-write it into a form as follows:
+```
+//note: you'll have to substitute real values for the placeholders in CAPS below.
+jdbc:postgresql://HOSTNAME/DBNAME?user=DBUSERNAME&password=DBPASSWORD
+```
 
 Then visit http://localhost:8080/greeting?name=yourname
+
+### Database? that's too much work for now
+
+If you don't want to faff with database stuff at all for now, just delete `ScoresController.java`.
 
 ### history
 
