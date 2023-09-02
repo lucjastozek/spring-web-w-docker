@@ -11,12 +11,27 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/greeting",
-					"protocol": "http",
+					"raw": "{{baseURL}}/greeting",
 					"host": [
-						"localhost"
+						"{{baseURL}}"
 					],
-					"port": "8080",
+					"path": [
+						"greeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "greeting Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/greeting",
+					"host": [
+						"{{baseURL}}"
+					],
 					"path": [
 						"greeting"
 					]
@@ -30,12 +45,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/scores",
-					"protocol": "http",
+					"raw": "{{baseURL}}/scores",
 					"host": [
-						"localhost"
+						"{{baseURL}}"
 					],
-					"port": "8080",
 					"path": [
 						"scores"
 					]
@@ -49,12 +62,10 @@
 				"method": "POST",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/scores?username={{$randomUserName}}&score={{$randomInt}}",
-					"protocol": "http",
+					"raw": "{{baseURL}}/scores?username={{$randomUserName}}&score={{$randomInt}}",
 					"host": [
-						"localhost"
+						"{{baseURL}}"
 					],
-					"port": "8080",
 					"path": [
 						"scores"
 					],
