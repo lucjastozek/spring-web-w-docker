@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "b2832883-7862-4398-9032-95094b1d9575",
+		"name": "java-spring-web-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "greeting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/greeting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"greeting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/scores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "new score",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/scores?username={{$randomUserName}}&score={{$randomInt}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"scores"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "{{$randomUserName}}"
+						},
+						{
+							"key": "score",
+							"value": "{{$randomInt}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
