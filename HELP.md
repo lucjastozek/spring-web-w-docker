@@ -1,5 +1,18 @@
 # Getting Started
 
+To start server, run DemoApplication.main()
+
+Then visit http://localhost:8080/greeting?name=yourname
+
+### history
+
+To build this and get it deployed on render, I followed:
+* https://www.youtube.com/watch?v=g4kQ3ELo49Y
+* https://start.spring.io/
+* https://spring.io/guides/gs/rest-service/
+
+The only thing that was missing, I think, was a .gitignore file!
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
