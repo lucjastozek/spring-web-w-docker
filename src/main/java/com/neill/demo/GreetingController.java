@@ -19,8 +19,8 @@ public class GreetingController {
     }
 
     @GetMapping("/")
-    public String potato() {
-        return "Hi!  Try /greeting or /scores";
+    public String potato(@RequestParam(value = "name") String name) {
+        return String.format("Hi, %s! Try /greeting or /scores", name);
     }
 
 }
